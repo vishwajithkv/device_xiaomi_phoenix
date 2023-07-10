@@ -14,7 +14,7 @@ $(call inherit-product, device/xiaomi/phoenix/device.mk)
 $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 # MIUI Cams
-$(call inherit-product, vendor/xiaomi/miuicam/config.mk)
+# $(call inherit-product, vendor/xiaomi/miuicam/config.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := bliss_phoenix
