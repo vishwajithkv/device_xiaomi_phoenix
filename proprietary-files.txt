@@ -467,8 +467,8 @@ vendor/lib64/libsns_device_mode_stub.so|0e1f278c97f814d17c40760c950b204fa0b630cf
 vendor/lib64/libsns_fastRPC_util.so|4b65d8aa6f0cf869a2621c423728e7328660b725
 vendor/lib64/libsns_low_lat_stream_stub.so|1f3c203e41524f005ea8474f2044d0a95be50753
 vendor/lib64/libsns_registry_skel.so|5b00d62e2aa1d5920714f21ce90873ac52a3087f
-vendor/lib64/libsnsapi.so|7f5326c3cdae730d2af2c679e829bf276b80972f
-vendor/lib64/libsnsdiaglog.so|e43cdf03612aebdc98cc386f8df96dc92d8eeae2
+vendor/lib64/libsnsapi.so
+vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libst_sr_models.so|055595570081935a4707dab3957261d3949bdcac
 vendor/lib64/libswregistrationalgo.so|d47dc0456142d3a0d6d8d4739ac1881ec7887364
 vendor/lib64/libswvdec.so|f0d9fa43148a319defcfd00e932fcb79ad056a5a
@@ -574,7 +574,7 @@ vendor/lib64/libminksocket.so|0722b9042892e83d4c615e0f70e4ad040365b170
 vendor/lib64/libmt@1.2.so|3307ac219fe41e0b2d896c8803c7da1bdf881110
 vendor/lib64/liboemcrypto.so|6b8c5ab8cb16b7f42071ddc59ac868fa684cff4e
 vendor/lib64/libtrustedapploader.so|53f72443cbbdec707658ffd46fcf418361315a06
-vendor/lib64/libwvhidl.so|2abdbc8966795ed903062ec1a8ba2e79bb5883f8
+vendor/lib64/libwvhidl.so
 vendor/lib64/libwvkeybox.so|446c716329a20ff6afac8cadb0fcd7045afe17c4
 
 # DSP
