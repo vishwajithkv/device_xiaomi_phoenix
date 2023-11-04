@@ -62,6 +62,9 @@ function blob_fixup() {
     vendor/lib64/camera/components/com.qti.node.watermark.so)
     "${PATCHELF}" --add-needed "libwatermark_shim.so" "${2}"
     ;;
+    vendor/bin/sensors.qti | vendor/bin/hw/android.hardware.drm@1.4-service.clearkey | vendor/lib/mediadrm/libwvdrmengine.so | vendor/lib64/libwvhidl.so | vendor/lib64/mediadrm/libwvdrmengine.so | vendor/lib64/libssc.so | vendor/lib64/libsnsdiaglog.so | vendor/lib64/libsnsapi.so | vendor/lib64/sensors.ssc.so | vendor/lib64/libgoodixhwfingerprint.so | vendor/lib64/mediacas/libwvdrmengine.so | vendor/lib64/libclearkeycasplugin.so | vendor/lib64/libsensorcal.so | vendor/lib/libgnss.so | vendor/lib64/libgnss.so)
+    "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
+    ;;
     esac
 }
 
