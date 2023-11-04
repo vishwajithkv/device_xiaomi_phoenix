@@ -132,8 +132,8 @@ PRODUCT_PACKAGES += \
     libstdc++_vendor
 
 PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v27/arm/arch-arm-armv7-a-neon/shared/vndk-sp/libhidltransport.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhidltransport-v27.so \
-    prebuilts/vndk/v27/arm64/arch-arm64-armv8-a/shared/vndk-sp/libhidltransport.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidltransport-v27.so
+    prebuilts/vndk/v29/arm/arch-arm-armv7-a-neon/shared/vndk-sp/libhidltransport.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhidltransport-v29.so \
+    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libhidltransport.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidltransport-v29.so
 
 # Crypto
 PRODUCT_PACKAGES += \
