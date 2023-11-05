@@ -123,7 +123,6 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 pm.dexopt.boot=verify
 pm.dexopt.first-boot=verify
 pm.dexopt.install=speed-profile
-dalvik.vm.image-dex2oat-filter=speed
 dalvik.vm.image-dex2oat-threads=8
 dalvik.vm.dex2oat-filter=speed
 dalvik.vm.dex2oat-threads=8
@@ -211,7 +210,6 @@ vendor.media.target.version=2
 
 # Netmgr
 persist.vendor.data.iwlan.enable=true
-ro.telephony.iwlan_operation_mode=legacy
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
