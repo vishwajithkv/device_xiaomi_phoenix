@@ -19,18 +19,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>android.hardware.drm</name>
-        <version>1.4</version>
-        <interface>
-            <name>IDrmFactory</name>
-            <instance>clearkey</instance>
-        </interface>
-        <interface>
-            <name>ICryptoFactory</name>
-            <instance>clearkey</instance>
-        </interface>
-    </hal>
     <hal format="hidl" optional="false">
         <name>android.hidl.allocator</name>
         <version>1.0</version>
