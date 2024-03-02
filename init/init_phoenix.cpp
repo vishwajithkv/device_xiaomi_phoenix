@@ -32,6 +32,8 @@
 #include <sys/_system_properties.h>
 #include <sys/sysinfo.h>
 
+#define SKU_PROP "ro.boot.product.hardware.sku"
+
 using android::base::GetProperty;
 
 void property_override(char const prop[], char const value[], bool add = true) {
@@ -51,6 +53,7 @@ void load_phoenix() {
     property_override("ro.product.manufacturer", "Xiaomi");
     property_override("ro.product.model", "Redmi K30");
     property_override("ro.product.name", "phoenix");
+    property_override(SKU_PROP, "phoenix");
 }
 
 void load_phoenixin() {
@@ -60,6 +63,7 @@ void load_phoenixin() {
     property_override("ro.product.manufacturer", "Xiaomi");
     property_override("ro.product.model", "POCO X2");
     property_override("ro.product.name", "phoenixin");
+    property_override(SKU_PROP, "phoenixin");
 }
 
 void vendor_load_properties() {
