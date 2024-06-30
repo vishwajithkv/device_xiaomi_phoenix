@@ -341,7 +341,8 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
-    libstagefrighthw
+    libstagefrighthw \
+    libpng.vendor
 
 # NeuralNetworks
 PRODUCT_PACKAGES += \
@@ -490,7 +491,9 @@ PRODUCT_PACKAGES += \
     libjson \
     libprotobuf-cpp-full \
     librmnetctl \
-    libxml2
+    libxml2 \
+    libnetutils.vendor \
+    libsqlite.vendor \
 
 # Seccomp
 PRODUCT_COPY_FILES += \
