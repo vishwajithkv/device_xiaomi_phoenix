@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/awaken_phoenix.mk
+    $(LOCAL_DIR)/aosp_phoenix.mk
 
 COMMON_LUNCH_CHOICES := \
-    awaken_phoenix-user \
-    awaken_phoenix-userdebug \
-    awaken_phoenix-eng
+    aosp_phoenix-user \
+    aosp_phoenix-userdebug \
+    aosp_phoenix-eng
