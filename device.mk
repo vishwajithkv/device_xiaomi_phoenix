@@ -194,7 +194,9 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    libkeymaster_messages.vendor:64
+    libkeymaster_messages.vendor:64 \
+    liblzma.vendor \
+    liblzma.vendor:64
 
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.xiaomi_phoenix
