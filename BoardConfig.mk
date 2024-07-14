@@ -182,9 +182,6 @@ TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 
-include vendor/bliss/config/BoardConfigReservedSize.mk
-
-
 # Power
 TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power-libperfmgr/power-mode.cpp
 
