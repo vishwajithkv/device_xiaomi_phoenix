@@ -24,6 +24,7 @@ persist.mm.enable.prefetch=true
 
 # Radio
 ril.subscription.types=RUIM
+persist.vendor.radio.add_power_save=1
 
 # Ram Management
 ro.config.fha_enable=true
