@@ -1,2 +1,6 @@
 # Mlipay
 type ifaa_prop, property_type;
+
+# USB 
+type sys_usb_controller_prop, property_type;
+type sys_usb_configfs_prop, property_type;

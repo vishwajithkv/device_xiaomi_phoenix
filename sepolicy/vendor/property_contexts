@@ -10,10 +10,17 @@ vendor.fps_hal.                    u:object_r:vendor_fp_prop:s0
 persist.vendor.fpc.                u:object_r:vendor_fp_prop:s0
 
 # Mlipay
-persist.vendor.sys.pay.		    u:object_r:ifaa_prop:s0
+persist.vendor.sys.pay.		       u:object_r:ifaa_prop:s0
 
 # Power HAL
 vendor.powerhal.                   u:object_r:vendor_power_prop:s0
+
+# Sensors
+persist.pressure.diff              u:object_r:vendor_default_prop:s0
+persist.sensor.sardisable          u:object_r:vendor_default_prop:s0
+
+# USB
+sys.usb.configfs                   u:object_r:sys_usb_configfs_prop:s0
 
 # Xiaomi thermal daemon
 vendor.sys.thermal.                u:object_r:vendor_thermal_normal_prop:s0
