@@ -25,6 +25,9 @@ TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Sign the build
+-include vendor/lineage-priv/keys/keys.mk
+
 # RisingOS
 RISING_MAINTAINER := leoxvis(vishwajithkv)
 RISING_CHIPSET := Snapdragon730G
