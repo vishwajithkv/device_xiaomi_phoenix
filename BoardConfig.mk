@@ -157,7 +157,7 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno618
 TARGET_BOARD_PLATFORM := sm6150
 
 # Partitions
-include vendor/bliss/config/BoardConfigReservedSize.mk
+include vendor/lineage/config/BoardConfigReservedSize.mk
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
