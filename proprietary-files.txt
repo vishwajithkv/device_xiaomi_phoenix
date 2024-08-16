@@ -440,7 +440,7 @@ vendor/etc/sdr_config.cfg
 -system_ext/lib64/libdpmframework.so
 -system_ext/lib64/libdpmtcm.so
 -vendor/bin/dpmQmiMgr
--vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
+-vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE_SUFFIX=_vendor
 -vendor/lib64/libdpmqmihal.so
 system/framework/tcmclient.jar
 system_ext/etc/dpm/dpm.conf
