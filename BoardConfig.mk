@@ -23,6 +23,10 @@ TARGET_KERNEL_CONFIG += vendor/phoenix.config
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
+
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+     $(DEVICE_PATH)/configs/hidl/framework_compatibility_matrix.xml \
+
 ODM_MANIFEST_SKUS += phoenix
 ODM_MANIFEST_PHOENIX_FILES := \
      $(DEVICE_PATH)/configs/hidl/manifest-nfc.xml
