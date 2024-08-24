@@ -16,6 +16,8 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # RisingOS
 RISING_MAINTAINER := leoxvis(vishwajithkv)
+WITH_GMS := true
+TARGET_CORE_GMS := true
 RISING_CHIPSET := Snapdragon730G
 PRODUCT_NO_CAMERA := false
 TARGET_ENABLE_BLUR := true
