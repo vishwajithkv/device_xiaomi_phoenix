@@ -1,5 +1,13 @@
 # These proprietary files are extracted from Redmi K30 4G (codenamed `phoenix`) MIUI V13.0.2.1.40.DEV, unless pinned
 
+# Current blobs with ELF checks disabled:
+# imsdatadaemon, libcne, libwqe, lowi-server depend on libwpa_client, which is a gnu makefile target
+# libOmxVpp depends on libOmxCore, which is a gnu makefile target
+# com.qti.chi.override, libmialgoengine depend on libgrallocutils, which is a gnu makefile target
+# libalLDC, libalhLDC depend on NDK libnativewindow and build is unable to resolve its symbols
+# libarcsoft_hta, libarcsoft_super_night_raw, libhvx_interface, libmialgo_rfs depend on libsdsprpc and build is unable to resolve its symbols
+
+
 # ADSP
 -vendor/bin/adsprpcd
 -vendor/bin/cdsprpcd
@@ -183,7 +191,7 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 -vendor/lib64/camera/com.qti.sensor.phoenix_ov8856.so
 -vendor/lib64/camera/com.qti.sensor.phoenix_s5k3t2.so
 -vendor/lib64/hw/camera.qcom.so
--vendor/lib64/hw/com.qti.chi.override.so
+-vendor/lib64/hw/com.qti.chi.override.so;DISABLE_CHECKELF
 -vendor/lib64/libFaceGrade.so
 -vendor/lib64/libHalSuperSensorServer.so
 -vendor/lib64/libSuperSensor.so
@@ -194,8 +202,8 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 -vendor/lib64/lib_denoiser3.so
 -vendor/lib64/libalAILDC.so
 -vendor/lib64/libalCFR.so
--vendor/lib64/libalLDC.so
--vendor/lib64/libalhLDC.so
+-vendor/lib64/libalLDC.so;DISABLE_CHECKELF
+-vendor/lib64/libalhLDC.so;DISABLE_CHECKELF
 -vendor/lib64/libarcsat.so
 -vendor/lib64/libarcsoft_beautyshot.so
 -vendor/lib64/libarcsoft_bodyslim.so
@@ -224,12 +232,12 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 -vendor/lib64/libcapiv2vop.so
 -vendor/lib64/libcom.qti.chinodeutils.so
 -vendor/lib64/libft2vendor.so
--vendor/lib64/libhvx_interface.so
+-vendor/lib64/libhvx_interface.so;DISABLE_CHECKELF
 -vendor/lib64/libmialgo_fs.so
--vendor/lib64/libmialgo_rfs.so
+-vendor/lib64/libmialgo_rfs.so;DISABLE_CHECKELF
 -vendor/lib64/libmialgo_sd.so
 -vendor/lib64/libmialgo_utils.so
--vendor/lib64/libmialgoengine.so
+-vendor/lib64/libmialgoengine.so;DISABLE_CHECKELF
 -vendor/lib64/libmibokeh_712.so
 -vendor/lib64/libmibokeh_712.so
 -vendor/lib64/libmpbase.so
@@ -334,11 +342,11 @@ vendor/app/CACertService/CACertService.apk
 
 # CNE
 -vendor/bin/cnd
--vendor/lib64/libcne.so
+-vendor/lib64/libcne.so;DISABLE_CHECKELF
 -vendor/lib64/libcneapiclient.so
 -vendor/lib64/libcneoplookup.so
 -vendor/lib64/libwms.so
--vendor/lib64/libwqe.so
+-vendor/lib64/libwqe.so;DISABLE_CHECKELF
 -vendor/lib64/libxml.so
 -vendor/lib64/vendor.qti.data.factory@2.0.so
 -vendor/lib64/vendor.qti.data.factory@2.1.so
@@ -551,7 +559,7 @@ vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 
 # GPS
 -vendor/bin/loc_launcher
--vendor/bin/lowi-server
+-vendor/bin/lowi-server;DISABLE_CHECKELF
 -vendor/bin/slim_daemon
 -vendor/bin/xtra-daemon
 -vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
@@ -593,7 +601,7 @@ vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
 -system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 -system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
 -vendor/bin/ims_rtp_daemon
--vendor/bin/imsdatadaemon
+-vendor/bin/imsdatadaemon;DISABLE_CHECKELF
 -vendor/bin/imsqmidaemon
 -vendor/bin/imsrcsd
 -vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so
@@ -679,7 +687,7 @@ vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
 -vendor/lib/libOmxDsdDec.so
 -vendor/lib/libOmxEvrcDec.so
 -vendor/lib/libOmxQcelp13Dec.so
--vendor/lib/libOmxVpp.so
+-vendor/lib/libOmxVpp.so;DISABLE_CHECKELF
 -vendor/lib/libOmxWmaDec.so
 -vendor/lib/libdsd2pcm.so
 -vendor/lib/libmmosal.so
