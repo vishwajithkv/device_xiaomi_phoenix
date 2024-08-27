@@ -341,6 +341,7 @@ PRODUCT_PACKAGES += \
     PhoenixCarrierConfigOverlay \
     PhoenixDialer \
     PhoenixFrameworksRes \
+    PhoenixNotchNoFillOverlay \
     PhoenixSettings \
     PhoenixSettingsProvider \
     PhoenixSystemUI \
