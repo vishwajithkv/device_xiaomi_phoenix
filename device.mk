@@ -337,11 +337,16 @@ PRODUCT_PACKAGES += \
     NotchNoFillOverlay
 
 # Overlay
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
-
-PRODUCT_ENFORCE_RRO_TARGETS += *
+PRODUCT_PACKAGES += \
+    PhoenixCarrierConfigOverlay \
+    PhoenixDialer \
+    PhoenixFrameworksRes \
+    PhoenixSettings \
+    PhoenixSettingsProvider \
+    PhoenixSystemUI \
+    PhoenixTelephony \
+    PhoenixWifiOverlay \
+    PhoenixLineageSDK \
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -374,7 +379,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.3.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.2.vendor \
-    PhoenixCarrierConfigOverlay \
     libjson \
     libril \
     librilutils \
@@ -478,7 +482,6 @@ PRODUCT_COPY_FILES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    PhoenixWifiOverlay \
     android.hardware.wifi-service \
     hostapd \
     ipacm \
