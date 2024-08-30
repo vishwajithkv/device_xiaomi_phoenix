@@ -381,7 +381,6 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.target.rc \
-    init.recovery.qcom.rc \
     ueventd.qcom.rc
 
 # Screen density
