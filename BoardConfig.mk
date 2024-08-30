@@ -167,15 +167,6 @@ include device/qcom/sepolicy_vndr/SEPolicy.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
-# Soong
-SOONG_CONFIG_NAMESPACES += xiaomiPhoenixVars
-SOONG_CONFIG_xiaomiPhoenixVars += \
-    livedisplay_support_anti_flicker \
-    livedisplay_support_sunlight_enhancement
-SOONG_CONFIG_xiaomiPhoenixVars_livedisplay_support_anti_flicker ?= false
-SOONG_CONFIG_xiaomiPhoenixVars_livedisplay_support_sunlight_enhancement ?= true
-
-
 # Verified boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
