@@ -634,7 +634,7 @@ vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
 -vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
 -vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 -vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
--vendor/lib64/vendor.qti.imsrtpservice@3.0.so
+-vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE_SUFFIX=_vendor
 system_ext/priv-app/ims/ims.apk|a79cc8000a0419e1d4d4664db839bf6cea2eb0b9
 vendor/etc/init/ims_rtp_daemon.rc
 vendor/etc/init/imsdatadaemon.rc
